@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>REST app-form</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+  </head>
+  <body>
+      <div id="myGrid"></div>
+     
+    <div id="table">
+      
+        <table id="table1">
+
+          <thead>
+
+              <tr>
+                <th id="id1">MOVIE</th>
+                <th>YEAR</th>
+                <th style="visibility:hidden;">ID</th>
+                <th>More Options</th>
+              </tr>
+
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+     
+        <button type="submit" value="button" id="button1">Click to update the current list</button>    
+       
+    </div>
+    
+    <div id="form">
+      <form>
+          <label>Enter Movie Name</label>
+          <input type="text" id="movieName"><br>
+          <label>Year Released</label>
+          <input type="number" id="year"><br>
+         
+         <button type="submit" value="button" id="submitButton">Submit</button>
+         <button type="submit" value="button" id="cancelButton" onclick="resetForm()">Cancel</button>
+      </form>
+     </div>
+    
+    
+    
+    
+  
+     
+        
+  </body>
+</html>

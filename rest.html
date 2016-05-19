@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>REST app-form</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+ 
+      
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="rest.js"></script>
+  </head>
+  <body>
+    
+      <div id="form">
+        <h2>CREATE</h2>
+          <form>
+            <label>Enter your Name</label>
+              <input type="text" id="createName">
+            <label>Enter your Age</label>
+              <input type="number" id="createAge">
+            <button type="submit" value="button" id="button1">Submit</button>
+            <button type="submit" value="button" id="cancelButton" onclick="resetForm()">Cancel</button><br>
+            <label>Created ID :</label><label id="createdId"></label><br><br>
+          </form>  
+        <h3>LIST</h3>
+          <ul id="list"></ul>
+      </div>
+    
+      <div id="singleItem">
+        <h2>SINGLE ITEM</h2>
+          <form>
+            <label>Enter ID:</label>
+              <input type="text" id="idInput">
+            <button type="submit" value="button" id="singleButton">Submit</button><br>
+            <label>ID :</label>
+            <label id="itemId"></label><br>
+            <label>NAME :</label>
+            <label id="itemName"></label><br>
+            <label>AGE :</label>
+            <label id="age"></label><br><br>
+          </form>        
+      </div>
+    
+      <div id="update">
+        <h2>UPDATE</h2>
+          <form>
+            <label>Enter ID:</label>
+              <input type="text" id="updateId">
+            <label>Enter your Name</label>
+              <input type="text" id="updateName">
+            <label>Enter your Age</label>
+            <input type="number" id="updateAge">
+            <button type="submit" value="button" id="updateButton">Submit</button><br>
+            <label>Updated ID :</label><label id="newId"></label><br><br>
+          </form>
+      </div>
+      <div id="delete">
+        <h2>DELETE</h2>
+          <form>
+            <label>Enter ID:</label>
+            <input type="text" id="deleteId">
+            <button type="submit" id="deleteButton">Delete</button>
+          </form>
+        
+        <div id="deleteDisplay"></div> <label> This ID has been deleted.</label>
+      </div>
+
+    
+    
+    
+    
+  
+     
+        
+  </body>
+</html>
